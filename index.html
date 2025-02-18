@@ -60,10 +60,6 @@
             margin-bottom: 15px;
             padding-left: 20px;
             position: relative;
-        }
-        .no-bullets li i {
-            margin-right: 8px;
-        }
         ul:not(.skills-grid):not(.programming) li::before {
             content: "•";
             color: #113aac;
@@ -72,7 +68,15 @@
             left: 0;
             top: -5px;
         }
-        a {
+        .no-bullets {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        
+        .no-bullets li i {
+            margin-right: 8px;
+        }
+                a {
             color: #1e88e5;
             text-decoration: none;
             transition: color 0.3s ease;
