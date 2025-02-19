@@ -166,12 +166,13 @@
             position: relative;
             display: inline-block;
             cursor: pointer;
-            color: #007bff;
-            text-decoration: underline;
+            text-decoration: none;
+            color: inherit;
         }
+        
         .tooltip .tooltiptext {
             visibility: hidden;
-            width: 200px;
+            width: 150px;
             background-color: black;
             color: #fff;
             text-align: center;
@@ -179,12 +180,13 @@
             padding: 5px;
             position: absolute;
             z-index: 1;
-            bottom: 125%;   /* position über dem wort */
+            bottom: 125%;
             left: 50%;
             transform: translateX(-50%);
             opacity: 0;
             transition: opacity 0.3s;
         }
+        
         .tooltip:hover .tooltiptext {
             visibility: visible;
             opacity: 1;
