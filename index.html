@@ -166,14 +166,14 @@
             position: relative;
             display: inline-block;
             cursor: pointer;
-            text-decoration: none;
+            text-decoration: none; /* Keine Unterstreichung */
             color: inherit;
         }
         
         .tooltip .tooltiptext {
             visibility: hidden;
             width: 150px;
-            background-color: black;
+            background-color: rgba(50, 50, 50, 0.8);
             color: #fff;
             text-align: center;
             border-radius: 5px;
@@ -184,12 +184,13 @@
             left: 50%;
             transform: translateX(-50%);
             opacity: 0;
-            transition: opacity 0.3s;
+            transition: opacity 0.3s, transform 0.2s ease-out;
         }
         
         .tooltip:hover .tooltiptext {
             visibility: visible;
             opacity: 1;
+            transform: translateX(-50%) translateY(-5px);
         }
     </style>
 </head>
